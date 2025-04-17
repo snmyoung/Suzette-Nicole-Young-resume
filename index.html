@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- ========== META DATA ========== -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Suzette-Nicole Young" />
+  <meta name="description" content="Interactive IT Résumé Website for Suzette-Nicole Young - Front-End Developer, Admin Support, Accessibility Advocate" />
+  <meta name="keywords" content="HTML, CSS, JavaScript, jQuery, IT Resume, Front-End Developer, Portfolio, WordPress, Accessibility, GitHub" />
+  <title>Suzette-Nicole Young | IT Résumé</title>
+
+  
+  <!-- Font Awesome v6.4.0 (Free + Webfont Support, No Login) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="style/style.css" />
+  
+  <!-- Optional Scroll Animation -->
+  <script src="script/script.js" defer></script>
+
+  <!-- Internal Styling (for main layout + fallback) -->
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to right, #f5f5f5, #e3f2fd);
+      color: #333;
+    }
+
+    header {
+      background-color: #2196f3;
+      color: white;
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    header img {
+      width: 140px;
+      height: 140px;
+      border-radius: 25% 25% 25% 25%;
+      border: 4px solid white;
+      object-fit: cover;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* subtle elevation */
+    }
+
+    .tagline {
+      font-style: italic;
+      font-size: 1.1em;
+      margin-top: 10px;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      background-color: #333;
+      padding: 12px;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #90caf9;
+    }
+
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h2 {
+      color: #1976d2;
+      margin-bottom: 10px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    .skill-tags span {
+      background: #bbdefb;
+      color: #0d47a1;
+      display: inline-block;
+      margin: 5px;
+      padding: 6px 12px;
+      border-radius: 20px;
+    }
+
+    .job, .education, .contact {
+      margin-bottom: 30px;
+    }
+
+    .resume-button {
+      display: block;
+      margin: 20px auto;
+      padding: 12px 20px;
+      background: #2196f3;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 8px;
+      text-align: center;
+    }
+
+    .resume-button:hover {
+      background: #1976d2;
+    }
+
+    .contact input, .contact textarea {
+      width: 100%;
+      max-width: 600px;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    .contact button {
+      padding: 10px 20px;
+      background: #2196f3;
+      color: white;
+      font-weight: bold;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    .contact button:hover {
+      background: #1976d2;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- ========== HERO SECTION ========== -->
+  <header>
+    <h1>Suzette-Nicole Young</h1>
+    <p>Front-End Developer | Admin Systems Support | Accessibility Advocate</p>
+    <img src="images/founder-pic.png" alt="Suzette-Nicole Young headshot">
+    <p class="tagline"><i class="fas fa-code"></i> Building tech with purpose & heart — because clean code never lies.</p>
+  </header>
+
+  <!-- ========== NAVIGATION ========== -->
+  <nav>
+    <a href="#about"><i class="fas fa-user"></i> About</a>
+    <a href="#skills"><i class="fas fa-tools"></i> Skills</a>
+    <a href="#experience"><i class="fas fa-briefcase"></i> Experience</a>
+    <a href="#education"><i class="fas fa-graduation-cap"></i> Education</a>
+    <a href="#contact"><i class="fas fa-envelope"></i> Contact</a>
+</nav>
+
+  <!-- ========== ABOUT ME ========== -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I’m a creative tech problem-solver with a love for clean code, smooth user experience, and projects that make a difference. With a background in administrative leadership and front-end development, I bridge tech with strategy — and always lead with empathy and efficiency.</p>
+  </section>
+
+  <!-- ========== SKILLS ========== -->
+  <section id="skills">
+    <h2>Skills & Tools</h2>
+    <div class="skill-tags">
+      <span><i class="fab fa-html5"></i> HTML</span>
+      <span><i class="fab fa-css3-alt"></i> CSS</span>
+      <span><i class="fab fa-js"></i> JavaScript</span>
+      <span><i class="fab fa-bootstrap"></i> Bootstrap</span>
+      <span><i class="fab fa-github"></i> GitHub</span>
+      <span><i class="fab fa-wordpress"></i> WordPress</span>
+      <span><i class="fab fa-accessible-icon"></i> ADA Compliance</span>
+      <span><i class="fab fa-woocommerce"></i> WooCommerce</span>
+    </div>
+  </section>
+
+  <!-- ========== EXPERIENCE ========== -->
+  <section id="experience">
+    <h2>Professional Experience</h2>
+
+    <div class="job">
+      <h3>Web Support & Tech Assistant – Full Sail Media <small>(2023–2024)</small></h3>
+      <ul>
+        <li>Managed WordPress updates, WooCommerce setups, and ADA compliance audits.</li>
+        <li>Supported internal projects and helped scale client solutions with quick turnaround.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <h3>Founder – VIN Industries LLC <small>(2021–Present)</small></h3>
+      <ul>
+        <li>Launched and manage an empowerment brand blending design, ecommerce, and outreach.</li>
+        <li>Built custom websites and digital tools to support product sales and mission-driven content.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ========== EDUCATION ========== -->
+  <section id="education">
+    <h2>Education & Certifications</h2>
+    <div class="education">
+      <p><strong>University of the District of Columbia</strong> – Current Student, IT Major</p>
+      <p><strong>Certifications:</strong> HTML, CSS, JavaScript, Bootstrap, IT Fundamentals+, Python, Tax Preparation</p>
+    </div>
+  </section>
+
+  <!-- ========== CONTACT ========== -->
+  <section id="contact">
+    <h2>Let’s Connect</h2>
+    <div class="contact">
+        <p>
+            Email: <a href="mailto:snmyoung4@gmail.com">snmyoung4@gmail.com</a>
+            <span style="font-size: 0.85em; color: #666;">(May require mail setup to launch)</span>
+          </p>
+          
+      <form action="https://formspree.io/f/xnnpjdyq" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required><br>
+        <input type="email" name="email" placeholder="Your Email" required><br>
+        <textarea name="message" placeholder="Your Message" required></textarea><br>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+    <a href="images/Suzette Resume.pdf" class="resume-button" download>
+      <i class="fas fa-download"></i> Download My Resume
+    </a>
+  </section>
+  <script>
+    const sections = document.querySelectorAll("section");
+  
+    const revealSection = () => {
+      sections.forEach((section) => {
+        const rect = section.getBoundingClientRect();
+        if (rect.top < window.innerHeight - 100) {
+          section.classList.add("visible");
+        }
+      });
+    };
+  
+    window.addEventListener("scroll", revealSection);
+    window.addEventListener("load", revealSection);
+  </script>
+  
+</body>
+</html>
